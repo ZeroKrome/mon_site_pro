@@ -1,0 +1,9 @@
+{% for value in field.value %}
+    <span class="badge badge-success" style="background-color: {{ value.couleur}};">
+        {{ value }}
+    </span>
+{% else %}
+    <span class="badge badge-secondary">
+        None
+    </span>
+{% endfor %}

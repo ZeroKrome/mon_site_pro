@@ -1,0 +1,109 @@
+@import "../../styles/fonts";
+
+.banniereHeader {
+  position: relative;
+  width: 100%;
+  height: 7rem;
+  background: center / cover no-repeat;
+  transition: all 0.5s ease;
+}
+.fondGris {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  background-color: #323946;
+  transition: all 0.5s ease;
+}
+.banniereInfos {
+  font-family: GlacialIndifference;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  gap: 1rem;
+  transition: all 0.5s ease;
+}
+
+.banniereInfos a {
+  cursor: pointer;
+}
+
+.banniereInfos p {
+  margin-bottom: 0;
+}
+
+.icone {
+  height: 2rem;
+  width: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.boutonContact {
+  border: #00eeff;
+  font-family: inherit;
+  background-color: #00eeff;
+  color: #e1364a;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.logo {
+  position: absolute;
+  top: 4.5rem;
+  left: 4rem;
+  height: 9rem;
+  width: 9rem;
+  background: center / cover no-repeat
+    url("../../../../public/images/icones/logo.png");
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+.logoLink:focus .logo {
+  border: 0.2rem solid #00eeff;
+}
+@media screen and (max-width: 960px) {
+  .banniereHeader,
+  .fondBleu {
+    height: 5rem;
+    transition: all 0.5s ease;
+  }
+  .banniereInfos p {
+    display: none;
+  }
+  .logo {
+    top: 1rem;
+    left: 4rem;
+    height: 10rem;
+    width: 10rem;
+    transition: all 0.5s ease;
+  }
+
+  .banniereInfos {
+    height: 1.5rem;
+    transition: all 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banniereInfos p {
+    display: none;
+  }
+  .logo {
+    top: 2rem;
+    left: 1rem;
+    height: 8rem;
+    width: 8rem;
+    transition: all 0.5s ease;
+  }
+  .banniereInfos {
+    right: 1rem;
+    top: 1rem;
+    transition: all 0.5s ease;
+  }
+}

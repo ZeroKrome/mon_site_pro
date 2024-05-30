@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Page non trouvée{% endblock %}
+
+{% block body %}
+    <main class="container" style="background-color: #172d90; color: white; display: flex; justify-content: center; flex-direction: column; align-items: center; height: 100vh; width: 100%; max-width: none; margin-left: 0; margin-right: 0">
+        <section class="row">
+            <div class="col-12">
+                <h1>Page non trouvée</h1>
+                <p>La page que vous recherchez n'a pas été trouvée.</p>
+                <a style="text-decoration: none; color: #0ec0f8" href="{{ path('app_home') }}">Retourner sur le site</a>.            
+            </div>
+        </section>
+    </main>
+{% endblock %}
