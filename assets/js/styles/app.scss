@@ -1,0 +1,24 @@
+@import "reset";
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  background-color: #323946;
+  min-height: 100vh; /* or the minimum height of your content */
+}
+
+.main {
+  flex: 1;
+}
+
+em {
+  font-style: italic;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

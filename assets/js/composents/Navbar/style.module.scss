@@ -1,0 +1,132 @@
+@import "../../styles/_font.scss";
+
+.navbar {
+  font-family: "NovecentoWideBold";
+  // position: relative;
+  background-color: #323946;
+  height: 8rem;
+  display: flex;
+  // flex-direction: row;
+  justify-content: end;
+  // align-items: center;
+  font-size: 1.4rem;
+  transition: all 0.5s ease;
+}
+
+.navMenu {
+  margin-bottom: 0;
+  align-items: center;
+  display: flex;
+  // gap: 5rem;
+  color: white;
+  margin-right: 2rem;
+  // transition: all 0.5s ease;
+}
+.navItem i {
+  margin-left: 0.5rem;
+}
+.navItem {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 6rem;
+}
+.menuIcon {
+  display: none;
+}
+.navLinks {
+  color: white;
+  text-decoration: none;
+}
+.navLinks:hover,
+.navLinks:focus {
+  background-color: #00eeff;
+  padding: 0.5rem;
+  border-radius: 4rem;
+  transition: all 0.2s ease-out;
+}
+@media screen and (max-width: 1650px) {
+  .navMenu {
+    gap: 2rem;
+    transition: all 0.5s ease;
+  }
+  .navbar {
+    font-size: 20px;
+    transition: all 0.5s ease;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .navMenu {
+    gap: 1rem;
+    transition: all 0.5s ease;
+  }
+  .navbar {
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+}
+@media screen and (max-width: 1396px) {
+  .navMenu {
+    gap: 4rem;
+    transition: all 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .navMenu {
+    gap: 2.5rem;
+    transition: all 0.5s ease;
+  }
+  // .navbar {
+  //   font-size: 15px;
+  //   transition: all 0.5s ease;
+  // }
+}
+
+@media screen and (max-width: 1176px) {
+  .navMenu {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    gap: 1rem;
+    transition: all 0.5s ease;
+  }
+}
+@media screen and (max-width: 960px) {
+  .navbar {
+    height: 4rem;
+    transition: all 0.5s ease;
+  }
+  .navMenu {
+    flex-direction: column;
+    width: 100%;
+    height: 130vh;
+    position: absolute;
+    top: 4rem;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navMenu.active {
+    background-color: #323946;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .menuIcon {
+    margin-right: 2rem;
+    color: white;
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    height: 4rem;
+    transition: all 0.5s ease;
+  }
+}

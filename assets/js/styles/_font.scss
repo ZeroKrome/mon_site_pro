@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "NexaBlack";
+  src: local("NexaBlack"), url("../../fonts/Nexa-Black.otf") format("opentype"),
+    url("../../fonts/Nexa-Black.ttf") format("truetype"),
+    url("../../fonts/Nexa-Black.woff") format("woff"),
+    url("../../fonts/Nexa-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NovecentoWideBold";
+  src: local("NovecentoWideBold"),
+    url("../../fonts/Novecento WideBold.otf") format("opentype"),
+    url("../../fonts/Novecento WideBold.ttf") format("truetype"),
+    url("../../fonts/Novecento WideBold.woff") format("woff"),
+    url("../../fonts/Novecento WideBold.woff2") format("woff2");
+}

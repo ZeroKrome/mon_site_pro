@@ -1,0 +1,190 @@
+@import "font";
+
+.wrapper .main-content,
+.content-header {
+  background-color: #0ec0f8;
+}
+.content-header-title .title {
+  color: white;
+  font-family: HeadingNow;
+  font-weight: bolder;
+  position: relative;
+  width: fit-content;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.content-header-title .title::after {
+  content: "";
+  width: 100%;
+  height: 0.5rem;
+  background: #172d90;
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+}
+
+.content-top {
+  box-shadow: 0 2px 0 #172d90;
+}
+
+.main-header #header-logo .logo-custom {
+  color: #9747ff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.datagrid thead th {
+  box-shadow: inset 0 -3px 0 #9747ff;
+}
+
+.datagrid thead a {
+  font-family: DisketMono;
+  color: white;
+  font-weight: bold;
+}
+
+.datagrid thead i {
+  color: #9747ff;
+}
+
+.datagrid td,
+.datagrid thead + tbody tr:first-child td {
+  box-shadow: inset 0 -1px 0 #9747ff;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.content-top .content-search input[type="search"][name="query"] {
+  background-color: white;
+}
+.table.datagrid th,
+.table.datagrid td {
+  background-color: #0ec0f8;
+}
+
+.table tbody tr td span {
+  font-family: GlacialIndifference;
+  color: white;
+}
+
+.table.datagrid tr:hover td {
+  background-color: #9747ff;
+}
+
+.table.datagrid tr td {
+  border: none;
+}
+
+.datagrid tr:not(.selected-row):hover .dropdown-toggle {
+  background-color: #e60073;
+  border-color: #ff4da6;
+}
+
+.dropdown-menu {
+  background-color: #9747ff;
+}
+
+.datagrid .dropdown-toggle.show,
+.datagrid .dropdown-toggle:active,
+.datagrid .dropdown-toggle:active:focus,
+.datagrid .dropdown-toggle:focus,
+.datagrid tr .dropdown-toggle.show,
+.datagrid tr:hover .dropdown-toggle.show,
+.datagrid tr:hover .dropdown-toggle:active,
+.datagrid tr:hover .dropdown-toggle:active:focus,
+.datagrid tr:hover .dropdown-toggle:focus {
+  border-color: #ff4da6;
+}
+.sidebar {
+  background-color: #172d90;
+}
+
+.sidebar #main-menu .menu .submenu .menu-icon {
+  color: white;
+}
+
+#main-menu .menu .menu-item-contents {
+  font-family: GlacialIndifference;
+  color: white;
+  font-weight: 400;
+}
+
+#main-menu .menu .submenu a {
+  color: white;
+}
+
+#main-menu .menu .menu-item .submenu-toggle .submenu-toggle-icon {
+  color: #9747ff;
+  font-weight: bolder;
+}
+
+#main-menu .menu .submenu a:hover {
+  color: #9747ff;
+}
+
+#main-menu
+  .menu
+  .submenu
+  a
+  #main-menu
+  .menu
+  .menu-item
+  .submenu-toggle
+  .submenu-toggle-icon {
+  color: #9747ff;
+}
+
+.user-menu-wrapper span.user-avatar .user-avatar-icon-background {
+  color: white;
+}
+
+.user-menu-wrapper span.user-avatar .user-avatar-icon-foreground {
+  color: #0ec0f8;
+}
+
+.user-menu-wrapper .user-details .user-name {
+  color: white;
+  font-weight: bold;
+}
+
+.fa-gear:before,
+.fa-home:before,
+.fa-search:before {
+  color: #9747ff;
+}
+
+.list-pagination-counter {
+  color: white;
+  font-weight: bolder;
+}
+
+.badge.badge-outline {
+  color: white;
+  background-color: #172d90ad;
+}
+
+.btn {
+  box-shadow: none;
+  border: 2px solid #9747ff;
+}
+
+.form-group label {
+  color: #172d90;
+}
+
+.form-widget .form-help {
+  color: greenyellow;
+  font-weight: bolder;
+}

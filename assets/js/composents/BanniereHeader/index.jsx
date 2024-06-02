@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./style.module.scss";
 import imageFacebook from "../../../../public/images/icones/iconefacebook.png";
 import imageLinkedn from "../../../../public/images/icones/iconelinkedn.png";
+import imageGitHub from "../../../../public/images/icones/iconegithub.svg";
 import { Link } from "react-router-dom";
 
 export default function BanniereHeader() {
@@ -10,7 +11,7 @@ export default function BanniereHeader() {
       <div className={styles.banniereHeader}></div>
       <div className={styles.fondGris}></div>
       <div className={styles.banniereInfos}>
-        <p>Retrouvez nous sur les réseaux sociaux</p>
+        <p>Retrouvez moi sur les réseaux sociaux</p>
         <a
           href="https://www.facebook.com/RugbyClubBethunois/?locale=fr_FR"
           target="_blank"
@@ -27,6 +28,12 @@ export default function BanniereHeader() {
           <div
             className={styles.icone}
             style={{ backgroundImage: `url(${imageLinkedn})` }}
+          ></div>
+        </a>
+        <a href="https://github.com/ZeroKrome" target="_blank">
+          <div
+            className={styles.icone}
+            style={{ backgroundImage: `url(${imageGitHub})` }}
           ></div>
         </a>
         <Link to="/contact">
